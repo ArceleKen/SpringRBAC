@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Test'){
       steps {
-        echo 'Test un cours...'
+        echo 'Test un cours...'..
       }
     }
     stage('Release'){
