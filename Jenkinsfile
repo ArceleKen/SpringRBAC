@@ -17,13 +17,13 @@ pipeline {
     stage('Release'){
       steps {
         echo 'Release un cours...'
-        sh("$(env.WORKSPAACE}/ecrire.sh")
+        sh("$(env.WORKSPAACE)/ecrire.sh")
       }
     }
     stage('Deploy'){
       steps {
         echo 'Deploy un cours...'
-        dir("$(env.WORKSPAACE}") {
+        dir("$(env.WORKSPAACE)") {
           sh('./ecrire.sh')
         }
       }
