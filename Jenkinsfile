@@ -5,7 +5,7 @@ pipeline {
     stage('Build'){
       steps {
         echo 'Build un cours...'
-        sh('chmod +x ./ecrire.sh'')
+        sh('chmod +x ./ecrire.sh')
         sh('./ecrire.sh')
       }
     }
